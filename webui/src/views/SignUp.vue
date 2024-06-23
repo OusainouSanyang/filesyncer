@@ -1,0 +1,7 @@
+<template>
+    <div class="join">
+  <button class="btn join-item">Button</button>
+  <button class="btn join-item">Button</button>
+  <button class="btn join-item">Button</button>
+</div>
+</template>
