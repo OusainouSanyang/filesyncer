@@ -10,6 +10,7 @@ lerna-debug.log*
 node_modules
 .DS_Store
 dist
+vendor
 dist-ssr
 coverage
 *.local
@@ -25,6 +26,8 @@ coverage
 *.ntvs*
 *.njsproj
 *.sln
+*.svg
+*.md
 *.sw?
 
 *.tsbuildinfo
