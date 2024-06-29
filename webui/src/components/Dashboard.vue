@@ -20,76 +20,72 @@
         </svg>
       </label>
     </div>
-    <div class="grid grid-cols-3 gap-6 p-4">
-      <div>
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn"><i class="bi bi-download"></i></button>
-            </div>
+    <div class="grid grid-cols-3 gap-24">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title">Card title!</h2>
+          <p class="border border-dashed rounded-md border-amber-950 p-4 m-2">
+            If a dog chews shoes whose shoes does he choose?
+          </p>
+          <div class="card-actions justify-end">
+            <button class="btn"><i class="bi bi-download"></i></button>
           </div>
         </div>
       </div>
-      <!-- ... -->
-      <div>
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn"><i class="bi bi-download"></i></button>
-            </div>
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title">Card title!</h2>
+          <p class="border border-dashed rounded-md border-amber-950 p-4 m-2">
+            If a dog chews shoes whose shoes does he choose?
+          </p>
+          <div class="card-actions justify-end">
+            <button class="btn"><i class="bi bi-download"></i></button>
           </div>
         </div>
       </div>
-      <div>
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn"><i class="bi bi-download"></i></button>
-            </div>
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title">Card title!</h2>
+          <p class="border border-dashed rounded-md border-amber-950 p-4 m-2">
+            If a dog chews shoes whose shoes does he choose?
+          </p>
+          <div class="card-actions justify-end">
+            <button class="btn"><i class="bi bi-download"></i></button>
           </div>
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-3 mt-8">
-      <div>
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn"><i class="bi bi-download"></i></button>
-            </div>
+    <div class="grid grid-cols-3 mt-8 gap-24">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title">Card title!</h2>
+          <p class="border border-dashed border-amber-950 p-4 m-2">
+            If a dog chews shoes whose shoes does he choose?
+          </p>
+          <div class="card-actions justify-end">
+            <button class="btn"><i class="bi bi-download"></i></button>
           </div>
         </div>
       </div>
-      <!-- ... -->
-      <div>
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn"><i class="bi bi-download"></i></button>
-            </div>
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title">Card title!</h2>
+          <p class="border border-dashed border-amber-950 p-4 m-2">
+            If a dog chews shoes whose shoes does he choose?
+          </p>
+          <div class="card-actions justify-end">
+            <button class="btn"><i class="bi bi-download"></i></button>
           </div>
         </div>
       </div>
-      <div>
-        <div class="card bg-base-100 w-96 shadow-xl">
+      <div class="card bg-base-100 w-96 shadow-xl ">
           <div class="card-body">
             <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p class="border border-dashed border-amber-950 p-4 m-2">If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-end">
               <button class="btn"><i class="bi bi-download"></i></button>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
