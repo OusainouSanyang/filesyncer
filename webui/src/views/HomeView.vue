@@ -1,13 +1,15 @@
 <template>
-  <div class="flex flex-row h-screen">
-    <div class=" basis-1/5 h-screen">
+  <div class="flex h-screen overflow-hidden">
+    <div class="basis-1/4 h-full overflow-y-auto">
       <SideNav />
     </div>
-    <div class=" basis-2/3">
+    <div class="basis-3/4 h-full overflow-y-auto">
       <RouterView />
     </div>
   </div>
 </template>
+
+
 
 <script setup>
 import SideNav from '../components/SideNav.vue'
