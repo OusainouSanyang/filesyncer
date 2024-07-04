@@ -1,9 +1,9 @@
 <template>
   <div class="flex h-screen overflow-hidden">
-    <div class="basis-1/4 h-full overflow-y-auto">
+    <div class="h-full overflow-y-auto w-1/4">
       <SideNav />
     </div>
-    <div class="basis-3/4 h-full overflow-y-auto">
+    <div class="h-full overflow-y-auto flex-1">
       <RouterView />
     </div>
   </div>
@@ -12,6 +12,6 @@
 
 
 <script setup>
-import SideNav from '../components/SideNav.vue'
-import { RouterView } from 'vue-router'
+import { RouterView } from 'vue-router';
+import SideNav from '../components/SideNav.vue';
 </script>

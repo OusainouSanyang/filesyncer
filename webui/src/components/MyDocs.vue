@@ -1,5 +1,5 @@
 <template>
-  <div class="p-12 h-screen">
+  <div class="pr-6 py-6 mr-12 h-screen">
     <div class="text-3xl text-amber-950 font-bold mb-8">
       <h1>My Documents</h1>
     </div>
@@ -16,7 +16,7 @@
       </div>
 
       <div>
-        <button class="btn bg-amber-950 text-white p-4 w-64 rounded-lg" onclick="my_modal_1.showModal()">
+        <button class="btn bg-amber-950 text-white w-64 rounded-lg" onclick="my_modal_1.showModal()">
           <i class="bi bi-upload"></i>
           Upload file
         </button>
@@ -27,20 +27,16 @@
             <div class="flex items-center justify-center w-full mt-6 p-6">
               <label for="dropzone-file"
                 class="flex flex-col items-center justify-center w-full h-64 border-2 border-amber-950 border-dashed rounded-lg cursor-pointer">
-                <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                <div class="flex flex-col items-center relative justify-center pt-5 pb-6">
                   <i class="bi bi-cloud-arrow-up-fill text-amber-950 text-4xl"></i>
 
                   <p class="mb-2 text-sm "><span class="font-semibold">Click to upload</span> or drag and drop</p>
                   <p class="text-xs ">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
                 </div>
+                <p class="absolute mt-36 px-8 py-2 rounded-md text-amber-950 bg-stone-200">Browse</p>
                 <input id="dropzone-file" type="file" class="hidden" />
               </label>
             </div>
-
-            <div class="w-full rounded-full h-2.5 ">
-              <div class="bg-amber-950 h-2.5 rounded-full" style="width: 45%"></div>
-            </div>
-
             <div class="modal-action">
               <form method="dialog">
                 <!-- if there is a button in form, it will close the modal -->
@@ -52,77 +48,60 @@
         </dialog>
       </div>
     </div>
-    <div class="grid grid-cols-3 gap-2 md:grid-cols-2 md:gap-6">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
       <div>
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">download</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ... -->
-      <div>
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">download</button>
-            </div>
-          </div>
-        </div>
+        <Card />
       </div>
       <div>
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">download</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="grid grid-cols-3 mt-8 md:grid-cols-2 md:gap-6">
-      <div>
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">download</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ... -->
-      <div>
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">download</button>
-            </div>
-          </div>
-        </div>
+        <Card />
       </div>
       <div>
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">download</button>
-            </div>
-          </div>
-        </div>
+        <Card />
+
+      </div>
+      <Card />
+
+      <div>
+        <Card />
+
+      </div>
+      <div>
+        <Card />
+
+      </div>
+      <div>
+        <Card />
+
+      </div>
+      <div>
+        <Card />
+
+      </div>
+      <div>
+        <Card />
+
+      </div>
+      <div>
+        <Card />
+
+      </div>
+      <div>
+        <Card />
+
+      </div>
+      <div>
+        <Card />
+
+      </div>
+      <div>
+        <Card />
+
       </div>
     </div>
+
   </div>
 </template>
+
+<script setup>
+import Card from './DocsCard.vue'
+</script>

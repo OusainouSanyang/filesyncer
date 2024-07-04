@@ -1,5 +1,5 @@
 <template>
-  <div class="p-2 h-screen md:h-auto">
+  <div class="pr-6 py-6 mr-12 h-screen md:h-auto">
     <div class="text-3xl text-amber-950 font-bold mb-8">
       <h1>Dashboard</h1>
     </div>
@@ -14,75 +14,63 @@
           </svg>
         </label>
       </div>
-      <div class="grid grid-cols-3 gap-24 md:grid-cols-2 md:gap-6">
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p class="border border-dashed rounded-md border-amber-950 p-4">
-              If a dog chews shoes whose shoes does he choose?
-            </p>
-            <div class="card-actions justify-end">
-              <button class="btn"><i class="bi bi-download"></i></button>
-            </div>
-          </div>
+
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div>
+          <Card />
         </div>
-        <div class="card bg-base-100 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p class="border border-dashed rounded-md border-amber-950 p-4">
-              If a dog chews shoes whose shoes does he choose?
-            </p>
-            <div class="card-actions justify-end">
-              <button class="btn"><i class="bi bi-download"></i></button>
-            </div>
-          </div>
+        <div>
+          <Card />
         </div>
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p class="border border-dashed rounded-md border-amber-950 p-4 ">
-              If a dog chews shoes whose shoes does he choose?
-            </p>
-            <div class="card-actions justify-end">
-              <button class="btn"><i class="bi bi-download"></i></button>
-            </div>
-          </div>
+        <div>
+          <Card />
+
         </div>
-      </div>
-      <div class="grid grid-cols-3 mt-8 gap-24 md:grid-cols-2">
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p class="border border-dashed border-amber-950 p-4 ">
-              If a dog chews shoes whose shoes does he choose?
-            </p>
-            <div class="card-actions justify-end">
-              <button class="btn"><i class="bi bi-download"></i></button>
-            </div>
-          </div>
+        <Card />
+
+        <div>
+          <Card />
+
         </div>
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p class="border border-dashed border-amber-950 p-4">
-              If a dog chews shoes whose shoes does he choose?
-            </p>
-            <div class="card-actions justify-end">
-              <button class="btn"><i class="bi bi-download"></i></button>
-            </div>
-          </div>
+        <div>
+          <Card />
+
         </div>
-        <div class="card bg-base-100 w-96 shadow-xl ">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p class="border border-dashed border-amber-950 p-4 ">If a dog chews shoes whose shoes does he choose?
-            </p>
-            <div class="card-actions justify-end">
-              <button class="btn"><i class="bi bi-download"></i></button>
-            </div>
-          </div>
+        <div>
+          <Card />
+
+        </div>
+        <div>
+          <Card />
+
+        </div>
+        <div>
+          <Card />
+
+        </div>
+        <div>
+          <Card />
+
+        </div>
+        <div>
+          <Card />
+
+        </div>
+        <div>
+          <Card />
+
+        </div>
+        <div>
+          <Card />
+
         </div>
       </div>
+
     </div>
   </div>
 </template>
+
+<script setup>
+import Card from './DashboardCard.vue'
+</script>
