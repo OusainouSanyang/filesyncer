@@ -26,7 +26,7 @@
           placeholder="password"
         />
       </form>
-      <RouterLink to="/home">
+      <RouterLink to="/dashboard">
         <button class="btn btn-block bg-amber-950 text-white text-2xl rounded-md mb-2">Sign In</button>
       </RouterLink>
       <p>don't have an account? <RouterLink to="/signup" class="link">sign up</RouterLink></p>
