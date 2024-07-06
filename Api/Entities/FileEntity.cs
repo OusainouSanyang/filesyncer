@@ -4,7 +4,7 @@ namespace Api.Entities
     {
         public int Id { get; set; }
         public string FileName {get; set;}
-        public DateTimeOffset DateUploaded { get; set; }
+        public DateTime DateUploaded { get; set; }
         public string UserId {get; set;}
         public UserEntity User {get; set;}
         public string FileType { get; set; }
