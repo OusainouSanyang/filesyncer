@@ -43,7 +43,7 @@ public class FileManagerController : ControllerBase
             }
     }
 
-    [Authorize]
+    // [Authorize]
     [HttpGet]
     [Route("download/{materialId}")]
     public async Task<IActionResult> DownloadFile(int materialId)

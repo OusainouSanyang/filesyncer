@@ -3,7 +3,7 @@
     <div class="text-3xl text-amber-950 font-bold mb-8">
       <h1>My Documents</h1>
     </div>
-    <div class=" flex justify-between">
+    <div class="flex justify-between">
       <div>
         <label class="input input-bordered flex items-center gap-2 mb-12">
           <input type="text" class="grow" placeholder="Search" />
@@ -42,66 +42,26 @@
                 <!-- if there is a button in form, it will close the modal -->
                 <button class="btn w-40 rounded-md text-amber-950">Cancel</button>
               </form>
-              <button class="btn w-40 rounded-md  bg-amber-950 text-white ">Upload</button>
+              <button class="btn w-40 rounded-md bg-amber-950 text-white">Upload</button>
             </div>
           </div>
         </dialog>
       </div>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-      <div>
-        <Card />
-      </div>
-      <div>
-        <Card />
-      </div>
-      <div>
-        <Card />
-
-      </div>
-      <Card />
-
-      <div>
-        <Card />
-
-      </div>
-      <div>
-        <Card />
-
-      </div>
-      <div>
-        <Card />
-
-      </div>
-      <div>
-        <Card />
-
-      </div>
-      <div>
-        <Card />
-
-      </div>
-      <div>
-        <Card />
-
-      </div>
-      <div>
-        <Card />
-
-      </div>
-      <div>
-        <Card />
-
-      </div>
-      <div>
-        <Card />
-
+      <div v-for="file in user?.uploads" :key="file.id">
+        <Card :file="file" />
       </div>
     </div>
-
   </div>
 </template>
 
 <script setup>
 import Card from './DocsCard.vue'
+import { useUserStore } from '../stores/user'
+import { computed } from 'vue'
+
+const userStore = useUserStore()
+const user = computed(() => userStore.user)
+
 </script>

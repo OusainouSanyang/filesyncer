@@ -3,6 +3,7 @@
     <div class="text-3xl text-amber-950 font-bold mb-8">
       <h1>Dashboard</h1>
     </div>
+
     <div class="overflow-y-auto h-full">
       <div>
         <label class="input input-bordered flex items-center gap-2 w-2/5 mb-12">
@@ -14,63 +15,37 @@
           </svg>
         </label>
       </div>
-
-
+      
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div>
-          <Card />
-        </div>
-        <div>
-          <Card />
-        </div>
-        <div>
-          <Card />
-
-        </div>
-        <Card />
-
-        <div>
-          <Card />
-
-        </div>
-        <div>
-          <Card />
-
-        </div>
-        <div>
-          <Card />
-
-        </div>
-        <div>
-          <Card />
-
-        </div>
-        <div>
-          <Card />
-
-        </div>
-        <div>
-          <Card />
-
-        </div>
-        <div>
-          <Card />
-
-        </div>
-        <div>
-          <Card />
-
-        </div>
-        <div>
-          <Card />
-
+        <div v-for="file in files" :key="file.id">
+          <Card :file="file" />
         </div>
       </div>
-
     </div>
   </div>
 </template>
 
 <script setup>
 import Card from './DashboardCard.vue'
+import instance from '../api/agent.ts'
+import { useUserStore } from '../stores/user'
+import { computed, ref, onMounted } from 'vue'
+
+const userStore = useUserStore()
+const user = computed(() => userStore.user)
+const files = ref([])
+
+const getFiles = async () => {
+  try {
+    const response = await instance.get('/all-files');
+    files.value = response.data;
+    console.log(response.data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+onMounted(() => {
+  getFiles();
+})
 </script>

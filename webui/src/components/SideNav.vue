@@ -7,8 +7,8 @@
         <div class="flex items-center gap-4">
           <img class="w-10 h-10 rounded-full" src="../assets//images/book-img.png" alt="">
           <div class="font-medium dark:text-white">
-            <div>Jese Leos</div>
-            <div class="text-sm text-gray-500 dark:text-gray-400">Joined in August 2014</div>
+            <div>{{ user?.userName }}</div>
+            <div class="text-sm text-gray-500 dark:text-gray-400">{{user?.email }}</div>
           </div>
         </div>
 
@@ -60,3 +60,13 @@
     </div>
   </aside>
 </template>
+
+
+<script setup>
+import { useUserStore } from '../stores/user'
+import { computed , onMounted} from 'vue'
+
+const userStore = useUserStore()
+
+const user = computed(() => userStore.user)
+</script>
