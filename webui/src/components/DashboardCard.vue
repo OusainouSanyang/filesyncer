@@ -1,17 +1,12 @@
 <template>
     <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
-        <div class="flex gap-4">
-            <div class="">
-                <i class="bi bi-file-earmark text-2xl "></i>
-            </div>
-            <div>
-                <h2 class=" font-semibold">{{ file.fileName }}</h2>
-                <small><i class="bi bi-calendar4-week mx-2"></i>{{ new Date(file.dateUploaded).toLocaleDateString() }}</small>
-            </div>
+     
+        <div>
+            <img :src="doc" alt="">
         </div>
 
         <div class=" border border-dashed border-amber-950 p-5 mt-6 rounded-lg">
-            <h3>Description</h3>
+            <h2 class=" font-semibold">File Name: {{ file.fileName }}</h2>
             <p>Type: {{ file.fileType }}</p>
             <p>Size: {{ (file.fileSizeInBytes / 1024).toFixed(2) }} KB</p>
         </div>
@@ -28,8 +23,9 @@
 </template>
   
   <script setup>
-  import { defineProps } from 'vue'
-  import instance from '../api/agent.ts'
+  import { defineProps } from 'vue';
+import instance from '../api/agent.ts';
+import doc from '../assets/images/doc.webp'
 
   const props = defineProps({
     file: Object

@@ -4,7 +4,6 @@
       <h1>My Documents</h1>
     </div>
     <div class="flex justify-between">
-    <div class="flex justify-between">
       <div>
         <label class="input input-bordered flex items-center gap-2 mb-12">
           <input type="text" class="grow" placeholder="Search" />
@@ -55,6 +54,7 @@
         <Card :file="file" />
       </div>
     </div>
+  </div>
   </div>
 </template>
 <script setup>
