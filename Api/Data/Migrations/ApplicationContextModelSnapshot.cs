@@ -23,7 +23,7 @@ namespace Api.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTimeOffset>("DateUploaded")
+                    b.Property<DateTime>("DateUploaded")
                         .HasColumnType("TEXT");
 
                     b.Property<byte[]>("FileContent")
@@ -46,6 +46,32 @@ namespace Api.Data.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Materials");
+                });
+
+            modelBuilder.Entity("Api.Entities.RefreshToken", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("Expires")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("Revoked")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Token")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("RefreshTokens");
                 });
 
             modelBuilder.Entity("Api.Entities.UserEntity", b =>
