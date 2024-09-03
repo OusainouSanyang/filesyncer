@@ -4,6 +4,7 @@
       <h1>My Documents</h1>
     </div>
     <div class="flex justify-between">
+    <div class="flex justify-between">
       <div>
         <label class="input input-bordered flex items-center gap-2 mb-12">
           <input type="text" class="grow" placeholder="Search" />
@@ -48,6 +49,8 @@
       </div>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div v-for="file in user?.uploads" :key="file.id">
+        <Card :file="file" />
       <div v-for="file in user?.uploads" :key="file.id">
         <Card :file="file" />
       </div>

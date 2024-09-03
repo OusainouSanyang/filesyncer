@@ -24,8 +24,10 @@
           class="input input-bordered flex items-center gap-2 mb-8"
           type="password"
           placeholder="password" v-model="password"
+          placeholder="password" v-model="password"
         />
       </form>
+      <button class="btn btn-block bg-amber-950 text-white text-2xl rounded-md mb-2" @click="loginUser(email, password)">Sign In</button>
       <button class="btn btn-block bg-amber-950 text-white text-2xl rounded-md mb-2" @click="loginUser(email, password)">Sign In</button>
       <RouterLink to="/dashboard">
       </RouterLink>
