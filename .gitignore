@@ -1,0 +1,9 @@
+# For Vue frontend and .NET backend
+node_modules/
+dist/
+.env
+bin/
+obj/
+
+
+
