@@ -13,7 +13,7 @@
             ],
             "problemMatcher": "$msCompile"
         },
-        {
+        { 
             "label": "publish",
             "command": "dotnet",
             "type": "process",
@@ -36,6 +36,7 @@
                 "${workspaceFolder}/lets-share.sln"
             ],
             "problemMatcher": "$msCompile"
-        }
-    ]
+         }
+     ]
 }
+
